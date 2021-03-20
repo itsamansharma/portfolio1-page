@@ -1,0 +1,311 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow: none;
+    overflow-x: hidden;
+}
+
+/* navbar */
+
+nav ul{
+    display: inline-flex;
+    list-style-type: none;
+    margin-left:25%;
+}
+nav button:nth-child(1):hover{
+    background-color: transparent;
+    color: black;
+}
+nav ul a{
+    font-weight:500;
+}
+nav ul li a{
+    color: black;
+}
+nav ul li a:hover{
+    color: rgb(114, 114, 114);
+}
+
+
+
+/* body */
+
+
+/* important */
+body .container-fluid::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+    width: 0;
+    height: 100;
+    border-color: transparent transparent transparent #ffe227 ;
+    border-style: solid;
+    border-width: 3000vw 0vw 20vw 100vw;
+}
+
+
+body .container-fluid h1{
+    font-family: Lato,sans-serif;
+    font-size: 80px;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+body .container-fluid h1:nth-child(2){
+    -webkit-text-stroke: 1px;
+    -webkit-text-fill-color: transparent;
+}
+body .jumbotron{
+    padding: 100px 0 0 150px;
+}
+body .container-fluid .jumbotron p{
+    width: 350px;
+}
+body .container-fluid .jumbotron a{
+    color: black;
+    font-weight: 500;
+}
+body .container-fluid figure img{
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    width: 663px;
+    z-index: -1;
+}
+
+
+
+/* //////////////////       section  first          //////////////////////////////////////// */
+body #section1{
+    margin: 300px 0 0 150px;
+}
+
+body section .section-shell{
+    position: relative;
+    padding: 0 66px;
+}
+
+body section .section-shell h2{
+    font-family: Poppins,sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    color: black;
+}
+
+.double-title:before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 34px;
+    height: 4px;
+    background-color: #2c2c2c;
+}
+
+.double-title::after{
+    content: attr(data-title);
+    z-index: -1;
+    position: absolute;
+    top: -60px;
+    /* bottom: 275px; */
+    left: 40px;
+    font-family: Poppins,sans-serif;
+    font-size: 100px;
+    line-height: 1.38;
+    color: #2c2c2c;
+    font-weight: 900;
+    -webkit-text-stroke: 1px;
+    -webkit-text-fill-color: transparent;
+}
+
+body .section-title h1{
+    font-family: Lato,sans-serif;
+    font-size: 80px;
+    font-weight: 800;
+}
+section .shell-content img{
+    width: 5rem;
+}
+section .shell-content{
+    width: 500px;
+
+}
+section .shell-content a{
+    font-weight: 400;
+    cursor: pointer;
+    color: black;
+}
+
+
+/* ////////figuer in the right side/////// */
+
+section .section-shell .figure-toggle{
+    position: absolute;
+    right: 0;
+}
+section .section-shell .figure-toggle figure{
+    /* position: relative; */
+    width: auto;
+    /* padding: px 39px 0 0; */
+}
+section .section-shell .figure-toggle figure img{
+    position: absolute;
+    top: 0;
+    display: none;
+    width: 25rem;
+    transition: opacity .3s,visibility .3s;
+    background-color: white;
+    padding: 0 20px;
+    margin-top: 7rem;
+} 
+
+
+/*////////////        section2        ////////////////////////////////////// */
+
+#section2{
+    margin-top: 100px;
+}
+
+section .section-shell-2 .section2content h2{
+    padding-right: 490px;
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: Poppins,sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    color: black;
+}
+.section-shell-2 .section2content h2::after{
+    content: attr(data-title);
+    position: absolute;
+    right: 290px;
+    top: 85rem;
+    font-family: Poppins,sans-serif;
+    font-size: 100px;
+    line-height: 1.38;
+    color: black;
+    font-weight: 900;
+    -webkit-text-stroke: 1px;
+    -webkit-text-fill-color: transparent;
+}
+
+#section2 .shell-heading a img{
+    width: 8rem;
+}
+#section2 .shell-heading{
+    padding-left: 15%;
+}
+#section2 figure img{
+    width: 26rem;
+    background-color: white;
+    /* background-color: rgb(114, 114, 114); */
+    position: absolute;
+    /* padding-left: 20%; */
+    margin-left: 10%;
+
+}
+.shell-heading a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: black;
+}
+.shell-heading a:hover{
+    color: black;
+}
+
+/*//////////////////////////// thirdsection3//////////////////// */
+#section3{
+    margin-top: 100px;
+}
+#section3 #section3-heading{
+    font-family: Poppins,sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    color: black;
+}
+#section3 #section3-heading::after{
+    content: attr(data-title);
+    position: absolute;
+    right: 26%;
+    top: 123.7rem;
+    font-family: Poppins,sans-serif;
+    font-size: 100px;
+    line-height: 1.38;
+    color: black;
+    font-weight: 900;
+    -webkit-text-stroke: 1px;
+    -webkit-text-fill-color:transparent;
+}
+#section3 h4{
+    margin: 0 20%;
+    line-height: 38px;
+    /* background-color: chocolate; */
+}
+
+/* ///////////////////last section ///////////////////////// */
+
+#section4{
+    margin: 18rem 12rem 5rem 12rem;
+    padding: 30px 50px 40px 50px;
+    background-color: #fde233f3;
+    border-radius:35px;
+}
+#section4 h2{
+    font-size: 3rem;
+    font-weight: 900;
+}
+#section4 h4{
+    line-height: 45px;
+}
+#section4 img{
+    max-width: 35rem;
+    height: auto;
+}
+
+/*//////////////////// footer section ////////////////////// */
+
+.footer {
+    padding: 15px 0 40px;
+}
+.shell {
+    max-width: 1194px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: auto;
+    width: 100%;
+}
+.footer .footer__inner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .footer__aside {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.footer .footer__nav {
+    font-family: Poppins,sans-serif;
+    font-size: 11px;
+    line-height: 1.36;
+    font-weight: 600;
+    letter-spacing: .4px;
+}
+
+.footer .footer__nav li {
+    margin: 0 19px;
+    width: 100px;
+}
+
+.footer .footer__nav a {
+    text-decoration: none;
+    transition: opacity .3s;
+}
